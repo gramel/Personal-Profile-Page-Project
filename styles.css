@@ -1,4 +1,8 @@
+/* Added CSS may be found at the bottom */
+/* Tested on Chrome Version 50.0.2661.102 (64-bit) and Firefox 47.0 */
+
 /* Global Layout Set-up */
+
 * { 
   box-sizing: border-box;
 }
@@ -11,6 +15,7 @@ body {
   color: #222;
   background: #f7f5f0;
 }
+
 /* Link Styles */
 
 a {
@@ -31,6 +36,7 @@ a:hover {
   position: fixed;
   text-align: center;
 }
+
 .nav {
   display: flex;
   justify-content: space-around;
@@ -39,7 +45,6 @@ a:hover {
   margin: 0 auto;
   padding: 0;
 }
-
 .nav .name {
     display: block;
     margin-right: auto;
@@ -57,7 +62,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/bondi.jpg') no-repeat top center ;
+  background: url('images/sunset.jpeg') no-repeat top center;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -76,6 +81,7 @@ header .profile-image {
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
+
 .tag {
   background-color: #efefef;
   color: black;
@@ -151,12 +157,6 @@ a.social {
   opacity: .4;
   transition: all .5s;
 }
-a.twitter {
-  background-image: url(images/twitter.svg);
-}
-a.linkedin {
-  background-image: url(images/linkedin.svg);
-}
 a.github {
   background-image: url(images/github.svg);
 }
@@ -180,7 +180,7 @@ a.social:hover {
   }
 
   header {
-    min-height: 470px;
+    min-height: 600px;
   }
 
   .nav {
@@ -204,4 +204,51 @@ a.social:hover {
   }
 
 }
+
+/* Added/Customized CSS */
+
+/* Profile Photo Additional CSS Properties */
+header .profile-image:hover {
+  box-shadow: 5px 5px 3px 0 #000;
+    border-radius: 30px;
+}
+
+
+.card-image img {
+  margin: 30px;
+  height: 385px;
+  width: 340px;
+  text-align: left;
+  background: #fff;
+  border-radius: 6px;
+  transition: all 0.5s ease;
+}
+
+.card-image img:hover {
+  border-color: #0680CD;
+}
+
+.card:hover {
+  border-color: #ff9904;
+}
+
+/* Experience Page Image */
+.experience {
+  background: url('images/sydney.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Contact Page Image */
+.contact {
+  background: url('images/bondi.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
 
